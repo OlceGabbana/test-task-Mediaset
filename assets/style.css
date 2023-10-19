@@ -74,6 +74,50 @@ nav ul li img{
     margin: 0 auto;
 }
 
+.about-company{
+    display: flex;
+    flex-direction: column;
+    padding: 0 95px 0 115px;
+}
+
+.about-company-block{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-company-text{
+    width: 50%;
+}
+
+.about-company-text h1{
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.about-company-text p{
+    margin-bottom: 23px;
+    font-size: 16px;
+}
+
+.about-company-text button{
+    margin-top: 21px;
+    background-color: #140E41;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: all 1s;
+}
+
+.about-company-text button:hover{
+    transition: all 1s;
+    background-color: #000000;
+    cursor: pointer;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -144,11 +188,14 @@ nav ul li img{
     margin-bottom: 24px;
 }
 
+.btn_padding{
+    padding: 15px 20px;
+}
+
 .btn_white{
     font-size: 18px;
     color: white;
     background-color: inherit;
-    padding: 15px 20px;
     border-radius: 6px;
     border: 1px solid white;
     transition: all 1s;
@@ -177,7 +224,6 @@ nav ul li img{
     display: flex;
     justify-content: space-between;
 }
-
 
 .address-block{
     width: 30vw;
