@@ -74,6 +74,41 @@ nav ul li img{
     margin: 0 auto;
 }
 
+.main-video{
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.main-video-content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-video h1{
+    width: 45vw;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 36px;
+    color: white;
+}
+
+.main-video button{
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.main-video button:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.5s;
+}
+
 .about-company{
     display: flex;
     flex-direction: column;
