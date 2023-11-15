@@ -109,6 +109,72 @@ nav ul li img{
     transition: all 0.5s;
 }
 
+.nav_menu{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.menu-content{
+    font-size: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    border-radius: 4px;
+}
+.no-r-padding{
+    padding-right: 0;
+}
+.no-b-padding{
+    transform: translateY(25%);
+    display: inline-block;
+}
+.menu-content p{
+    margin-top: auto;
+}
+.menu-content sup{
+    color: #C83936;
+    font-size: 14px;
+}
+.menu-content img{
+    margin-left: auto;
+}
+.w-390{
+    width: 390px;
+}
+.w-275{
+    width: 275px;
+}
+.w-160{
+    width: 160px;
+}
+.color-red{
+    color: white;
+    background: #C83936;
+    transition: all 0.7s;
+}
+.color-main{
+    background: #F4F4F4;
+    transition: all 0.7s;
+}
+.color-main:hover > .color-main-white-img{
+    filter: invert(97%) sepia(100%) saturate(13%) hue-rotate(208deg) brightness(105%) contrast(105%);
+    transition: all 0.7s;
+}
+.color-red:hover, .color-main:hover{
+    color: white;
+    background: #140E41;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
 .about-company{
     display: flex;
     flex-direction: column;

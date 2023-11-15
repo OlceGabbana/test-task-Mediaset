@@ -58,6 +58,45 @@
           <button class="btn_padding">Выбрать памятник</button>
         </div>
       </section>
+      <section class="nav_menu">
+          <div class="menu-container">
+            <div class="w-390 color-red menu-content">
+                <img src="assets/img/конструктор.svg" alt="Конструктор" width="130px">
+                <p>Конструктор</p>
+            </div>
+            <div class="w-275 color-main menu-content">
+              <img src="assets/img/памятники.svg" alt="Памятники" width="67px" class="color-main-white-img">
+              <p>Памятники <sup>102</sup></p>
+            </div>
+            <div class="w-275 color-main menu-content no-r-padding">
+              <img src="assets/img/благоустройство.svg" alt="Благоустройство" width="207px" class="color-main-white-img">
+              <p>Благоустройство <sup>12</sup></p>
+            </div>
+            <div class="w-160 color-main menu-content no-r-padding">
+              <img src="assets/img/ограды.svg" alt="Ограды" width="144px" class="color-main-white-img">
+              <p>Ограды <sup>23</sup></p>
+            </div>
+          </div>
+          </div>
+          <div class="menu-container">
+            <div class="w-275 color-main menu-content no-r-padding">
+                <img src="assets/img/столы и скамьи.svg" alt="Столы и скамьи" width="205px" class="color-main-white-img">
+                <p>Столы и скамьи <sup>6</sup></p>
+            </div>
+            <div class="w-275 color-main menu-content">
+              <img src="assets/img/ваза.svg" alt="Ваза" width="52px" class="color-main-white-img">
+              <p>Дополнительная комплектация <sup>8</sup></p>
+            </div>
+            <div class="w-160 color-main menu-content">
+              <img src="assets/img/кресты.svg" alt="Кресты" width="62px" class="color-main-white-img no-b-padding">
+              <p>Кресты <sup>62</sup></p> 
+            </div>
+            <div class="w-390 color-main menu-content">
+              <img src="assets/img/венки.svg" alt="Венки" width="106px"  class="color-main-white-img">
+              <p>Венки <sup>12</sup></p>
+          </div>
+          </div>
+      </section>
       <section class="about-company">
         <div class="about-company-block">
           <div class="about-company-text">
@@ -276,5 +315,23 @@
         </div>
       </section>
     </footer>
+    <!-- <script>
+      $("img.color-main-white-img").each(function () {
+        var $img = $(this);
+        var imgClass = $img.attr("class");
+        var imgURL = $img.attr("src");
+        $.get(imgURL, function (data) {
+            var $svg = $(data).find("svg");
+            if (typeof imgClass !== "undefined") {
+                $svg = $svg.attr("class", imgClass + " replaced-svg");
+            }
+            $svg = $svg.removeAttr("xmlns:a");
+            if (!$svg.attr("viewBox") && $svg.attr("height") && $svg.attr("width")) {
+                $svg.attr("viewBox", "0 0 " + $svg.attr("height") + " " + $svg.attr("width"))
+            }
+            $img.replaceWith($svg);
+        }, "xml");
+      });
+    </script> -->
   </body>
 </html>
